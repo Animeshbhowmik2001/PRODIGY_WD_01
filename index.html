@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#grade">GRADE</a></li>
+                <li><a href="#payment">PAYMENT INFO</a></li>
+                <li><a href="#homework">HOMEWORK</a></li>
+                <li><a href="#admission">ADMISSION</a></li>
+                <li><a href="#login">LOGIN/REGISTRATION</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to Study Center</h1>
+        <p>Your go-to place for academic excellence.</p>
+    </section>
+
+    <section id="login" class="card-section">
+        <div class="card card-login">
+            <h2>Login / Registration</h2>
+            <div class="form-container">
+                <div class="form-tab">
+                    <button class="tab-button active" data-form="login-form">Login</button>
+                    <button class="tab-button" data-form="register-form">Register</button>
+                </div>
+                <div id="login-form" class="form-content">
+                    <form>
+                        <label for="login-phone">Phone Number:</label>
+                        <input type="tel" id="login-phone" name="login-phone" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div id="register-form" class="form-content" style="display: none;">
+                    <form>
+                        <label for="register-phone">Phone Number:</label>
+                        <input type="tel" id="register-phone" name="register-phone" required>
+                        <label for="register-password">Password:</label>
+                        <input type="password" id="register-password" name="register-password" required>
+                        <label for="register-confirm-password">Confirm Password:</label>
+                        <input type="password" id="register-confirm-password" name="register-confirm-password" required>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="grade" class="card-section">
+        <div class="card card-grade">
+            <h2>Grade Information</h2>
+            <p>Check your grades and track your progress.</p>
+        </div>
+    </section>
+    
+    <section id="payment" class="card-section">
+        <div class="card card-payment">
+            <h2>Payment Information</h2>
+            <div class="payment-tabs">
+                <button class="tab-button active" data-month="january">January</button>
+                <button class="tab-button" data-month="february">February</button>
+                <button class="tab-button" data-month="march">March</button>
+                <button class="tab-button" data-month="april">April</button>
+                <button class="tab-button" data-month="may">May</button>
+                <button class="tab-button" data-month="june">June</button>
+                <button class="tab-button" data-month="july">July</button>
+                <button class="tab-button" data-month="august">August</button>
+                <button class="tab-button" data-month="september">September</button>
+                <button class="tab-button" data-month="october">October</button>
+                <button class="tab-button" data-month="november">November</button>
+                <button class="tab-button" data-month="december">December</button>
+            </div>
+            <div class="payment-content" id="payment-content">
+                <p>Select a month to view payment details.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="homework" class="card-section">
+        <div class="card card-homework">
+            <h2>Homework Assignments</h2>
+            <p>View and manage your homework assignments.</p>
+        </div>
+    </section>
+
+    <section id="admission" class="card-section">
+        <div class="card card-admission">
+            <h2>Admission Information</h2>
+            <p>Learn about the admission process and requirements.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Study Center. All rights reserved.</p>
+    </footer>
+
+    <script src="center.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
